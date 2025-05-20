@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    url: jdbc:sqlserver://database.c67k8gieccpj.us-east-1.rds.amazonaws.com:1433;database=angularspringbootecommerce;encrypt=false
+    url: jdbc:sqlserver://database.c1a8g4gwudum.us-west-1.rds.amazonaws.com:1433;database=angularspringbootecommerce;encrypt=false
     username: admin
     password: Karthickgisl
   jpa:

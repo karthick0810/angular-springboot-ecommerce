@@ -17,7 +17,7 @@ export interface UserDto {
   providedIn: 'root'
 })
 export class UserService {
-  private baseUrl = 'http://localhost:8080/api/v1/user';
+  private baseUrl = 'http://afebb05d2998b4d81aa2bcbc9bfbcaaa-1914543764.us-west-1.elb.amazonaws.com:8080/api/v1/user';
 
   constructor(private http: HttpClient) { }
 

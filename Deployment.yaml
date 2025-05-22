@@ -20,20 +20,7 @@ spec:
         - containerPort: 80
         env:
         - name: API_BASE_URL
-          value: "http://java-service:8080"
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: angular-service
-spec:
-  selector:
-    app: angular
-  ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 80
-  type: LoadBalancer
+          value: "http://afebb05d2998b4d81aa2bcbc9bfbcaaa-1914543764.us-west-1.elb.amazonaws.com:8080"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -58,17 +45,4 @@ spec:
         - name: SPRING_PROFILES_ACTIVE
           value: "qa"
         - name: CLIENT_URL
-          value: "http://angular-service:80"
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: java-service
-spec:
-  selector:
-    app: java
-  ports:
-  - protocol: TCP
-    port: 8080
-    targetPort: 8080
-  type: LoadBalancer
+          value: "http://aac728c45f1bf44a888c31a55dbfae17-671087227.us-west-1.elb.amazonaws.com:80"

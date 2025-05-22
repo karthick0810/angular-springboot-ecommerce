@@ -15,7 +15,7 @@ export interface CartItem {
   providedIn: 'root'
 })
 export class CartService {
-  private baseApiUrl = 'http://localhost:8080/api/v1';
+  private baseApiUrl = 'http://afebb05d2998b4d81aa2bcbc9bfbcaaa-1914543764.us-west-1.elb.amazonaws.com:8080/api/v1';
 
   constructor(private http: HttpClient) {}
 

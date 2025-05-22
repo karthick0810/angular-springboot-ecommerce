@@ -15,7 +15,7 @@ import java.util.Optional;
 
 @RequiredArgsConstructor
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://aac728c45f1bf44a888c31a55dbfae17-671087227.us-west-1.elb.amazonaws.com")
 @RequestMapping("/api/v1/products")
 public class ProductController {
 

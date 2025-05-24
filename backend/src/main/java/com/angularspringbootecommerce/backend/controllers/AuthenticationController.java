@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin(origins = "http://aac728c45f1bf44a888c31a55dbfae17-671087227.us-west-1.elb.amazonaws.com:80")
 @RestController
 @RequestMapping("api/v1/auth")
 public class AuthenticationController {

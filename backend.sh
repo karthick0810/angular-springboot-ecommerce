@@ -6,7 +6,7 @@ cd backend
 
 git pull
 
-docker build -t backend:latest .
+docker build --no-cache -t backend:latest .
 
 docker tag backend:latest 754450290666.dkr.ecr.us-east-1.amazonaws.com/my-app/backend:latest
 

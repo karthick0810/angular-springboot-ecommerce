@@ -6,7 +6,7 @@ cd frontend
 
 git pull
 
-docker build -t frontend:latest .
+docker build --no-cache -t frontend:latest .
 
 docker tag frontend:latest 754450290666.dkr.ecr.us-east-1.amazonaws.com/my-app/frontend:latest
 
